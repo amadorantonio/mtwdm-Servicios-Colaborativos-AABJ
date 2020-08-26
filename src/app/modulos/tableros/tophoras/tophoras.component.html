@@ -1,0 +1,68 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Reporte TOP horas</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Filtros
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input [(ngModel)]="topNumber" type="number" class="form-control" value="4" min="0" (change)="topChange()">
+                    </div>
+                    <div class="col-md-3">
+                        <ng-select
+                            [items]="orden$ | async"
+                            [searchable]="true"
+                            bindLabel="descripcion"
+                            [clearable]="true"
+                            (change)="ordenOnChange($event)"
+                            [(ngModel)]="ordenSelected">
+                        </ng-select>
+                    </div>
+                    <div class="col-md-6">
+                        <ng-select
+                            [items]="dimension$ | async"
+                            [searchable]="true"
+                            bindLabel="descripcion"
+                            placeHolder="Dimension"
+                            [clearable]="true"
+                            (change)="dimensionOnChange($event)"
+                            (clear)="dimension_OnClear($event)"
+                            [(ngModel)]="dimensionSelected">
+                        </ng-select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Resultado
+            </div>
+            <div class="panel-body">
+                <div>
+                    <div>
+                      <div style="display: block">
+                        <canvas baseChart
+                          [datasets]="barChartData"
+                          [labels]="barChartLabels"
+                          [options]="barChartOptions"
+                          [plugins]="barChartPlugins"
+                          [legend]="barChartLegend"
+                          [chartType]="barChartType">
+                        </canvas>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

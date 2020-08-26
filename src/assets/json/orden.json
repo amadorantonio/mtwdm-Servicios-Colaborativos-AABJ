@@ -1,0 +1,12 @@
+[
+    {
+        "codigo": 1,
+        "descripcion": "Ascendente",
+        "valor": "Asc"
+    },
+    {
+        "codigo": 2,
+        "descripcion": "Descendente",
+        "valor": "Desc"
+    }
+]

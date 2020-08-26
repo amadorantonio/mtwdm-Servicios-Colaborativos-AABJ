@@ -1,0 +1,22 @@
+[
+    {
+        "codigo": 1,
+        "descripcion": "Municipio",
+        "valor": "[Dimaula].[Dim Aula Municipio]"
+    },
+    {
+        "codigo": 2,
+        "descripcion": "Tipo de actividad",
+        "valor": "[Dimactividad].[Dim Actividad Tipo]"
+    },
+    {
+        "codigo": 3,
+        "descripcion": "Naturalezas",
+        "valor": "[Dimactividad].[Dim Actividad Naturalezas]"
+    },
+    {
+        "codigo": 4,
+        "descripcion": "Actividad",
+        "valor": "[Dimactividad].[Dim Actividad Nombre]"
+    }
+]
