@@ -15,8 +15,8 @@ import { AppRoutingModule } from './app.routes'
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    SidebarComponent,
-    HoursComponent
+    SidebarComponent
+    //HoursComponent
   ],
   imports: [
     BrowserModule,

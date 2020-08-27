@@ -15,11 +15,23 @@ export class EsijService {
     return this.http.get(`${URL_BASE}/TopN/${topN}/${dimension}/${order}`).pipe();
   }
 
+  getAnios(){
+    return this.http.get(`${URL_BASE}/GetAnios`).pipe()
+  }
+
+  getMeses(){
+    return this.http.get(`${URL_BASE}/GetMeses`).pipe()
+  }
+
   getDimensions(){
     return this.http.get('assets/json/dimensions.json');
   }
 
   getOrden(){
     return this.http.get('assets/json/orden.json');
+  }
+
+  inscritosAnioMes(stringAnios: string, stringMeses: string){
+    return this.http.get(`${URL_BASE}/inscritosaniomes/${stringAnios}/${stringMeses}`).pipe();
   }
 }
