@@ -34,4 +34,8 @@ export class EsijService {
   inscritosAnioMes(stringAnios: string, stringMeses: string){
     return this.http.get(`${URL_BASE}/inscritosaniomes/${stringAnios}/${stringMeses}`).pipe();
   }
+
+  getTotalInscritos(){
+    return this.http.get(`${URL_BASE}/totalinscritos`).pipe();
+  }
 }

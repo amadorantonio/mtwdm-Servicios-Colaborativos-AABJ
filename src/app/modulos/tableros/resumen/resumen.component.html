@@ -7,33 +7,9 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                Filtros
+                Horas de capacitación totales
             </div>
             <div class="panel-body">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <ng-select
-                            [items]="anios$"
-                            [multiple]="true"
-                            [searchable]="true"
-                            bindLabel="anioValue"
-                            [clearable]="true"
-                            (change)="aniosOnChange($event)"
-                            [(ngModel)]="aniosSelected">
-                        </ng-select>
-                    </div>
-                    <div class="col-sm-6">
-                        <ng-select
-                            [items]="meses$"
-                            [multiple]="true"
-                            [searchable]="true"
-                            bindLabel="mesName"
-                            [clearable]="true"
-                            (change)="mesesOnChange($event)"
-                            [(ngModel)]="mesesSelected">
-                        </ng-select>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-md-12 no-padding">
                         <div class="panel panel-teal panel-widget border-right">
@@ -48,4 +24,8 @@
         </div>
     </div>
 </div>
-<app-hours></app-hours>
+<div class="row">
+    <app-hours></app-hours>
+    <app-hours></app-hours>
+    <app-hours></app-hours>
+</div>

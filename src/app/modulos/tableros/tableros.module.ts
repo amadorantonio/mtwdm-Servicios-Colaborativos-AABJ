@@ -10,8 +10,6 @@ import { FormsModule } from '@angular/forms'
 import { ChartsModule } from 'ng2-charts'
 import { NgSelectModule } from '@ng-select/ng-select';
 import { HoursComponent } from 'src/app/components/reports/hours/hours.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from 'src/app/app.routes';
 
 
 

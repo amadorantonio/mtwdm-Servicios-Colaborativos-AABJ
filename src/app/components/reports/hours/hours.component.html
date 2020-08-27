@@ -1,1 +1,44 @@
-<p>hours works!</p>
+
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Componente de horas
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6">
+                    <ng-select
+                        [items]="anios$"
+                        [multiple]="true"
+                        [searchable]="true"
+                        bindLabel="anioValue"
+                        [clearable]="true"
+                        (change)="aniosOnChange($event)"
+                        [(ngModel)]="aniosSelected">
+                    </ng-select>
+                </div>
+                <div class="col-sm-6">
+                    <ng-select
+                        [items]="meses$"
+                        [multiple]="true"
+                        [searchable]="true"
+                        bindLabel="mesName"
+                        [clearable]="true"
+                        (change)="mesesOnChange($event)"
+                        [(ngModel)]="mesesSelected">
+                    </ng-select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 no-padding">
+                    <div class="panel panel-teal panel-widget border-right">
+                        <div class="row no-padding"><em class="fa fa-xl fa-users color-blue"></em>
+                            <div class="large">{{lblInscritos}}</div>
+                            <div class="text-muted">Inscritos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
